@@ -1,14 +1,14 @@
-# Google Cloud Fruit and Vegtable Image Model
+# Google Cloud Vertex AI Fruit and Vegtable Image Model
 
 ## Overview
 
-This repository contains example code to train an image classification model using Google Cloud and Keras. 
+This repository contains example code to train an image classification model using [Google Cloud Vertex AI](https://cloud.google.com/vertex-ai) and [Keras](https://keras.io/). 
 
-Specifically, you will: 
+Specifically, you will:
 
-1. Generate synthentic images of fruit and vegtables that are ripe or rotten
-2. Save images in Google Cloud Storage 
-3. Train a custom image classification model with Keras and perform inference on an example image 
+1. Setup Google Cloud project and create a [Vertex AI Workbench Instance](https://cloud.google.com/vertex-ai/docs/workbench/instances/introduction)
+2. Generate synthentic images of fruit and vegtables that are ripe or rotten using Imagen 2 API (see more [here](https://cloud.google.com/vertex-ai/generative-ai/docs/image/overview)) and save them in a Google Cloud Storage bucket.
+3. Train a custom image classification model using Keras and perform an example inference locally.
 
 Finally, see the `src` folder for an example notebook from the Kaggle dataset: [Fruit and Vegetable Disease (Healthy vs Rotten)](https://www.kaggle.com/datasets/muhammad0subhan/fruit-and-vegetable-disease-healthy-vs-rotten)
 
@@ -18,7 +18,7 @@ Finally, see the `src` folder for an example notebook from the Kaggle dataset: [
 
 **The following steps are required, regardless of your notebook environment.**
 
-1. [Select or create a Google Cloud project](https://console.cloud.google.com/cloud-resource-manager). When you first create an account, you get a $300 free credit towards your compute/storage costs. 
+1. [Select or create a Google Cloud project](https://console.cloud.google.com/cloud-resource-manager). When you first create an account, you get a $300 free credit towards your compute/storage costs.
 2. [Make sure that billing is enabled for your project](https://cloud.google.com/billing/docs/how-to/modify-project).
 3. [Enable the Vertex AI, Arifact Registry and Cloud Build APIs](https://console.cloud.google.com/flows/enableapi?apiid=aiplatform.googleapis.com,cloudbuild.googleapis.com,artifactregistry.googleapis.com).
 4. If you are running this notebook locally, you need to install the [Cloud SDK](https://cloud.google.com/sdk).
@@ -29,7 +29,7 @@ The Workbench instance we will create should use the Default Compute Engine Serv
 
 Grant the necessary roles via GCP console or via gcloud commands below by opening a Cloud Shell session (click terminal logo in top right corner of the Google Cloud Console)
 
-roles to grant: 
+roles to grant:
 
 * roles/storage.objectAdmin
 * roles/aiplatform.admin
@@ -64,7 +64,7 @@ gcloud services enable aiplatform.googleapis.com \
   artifactregistry.googleapis.com 
 ```
 
-### Create Workbench Notebook instance
+## Create Workbench Notebook instance
 
 Create a workbench notebook with the following gcloud command below or via the [Google Cloud console](https://console.cloud.google.com/vertex-ai/workbench/instances) and then upload this notebook
 
@@ -78,3 +78,11 @@ references:
 
 * doc: https://cloud.google.com/vertex-ai/docs/workbench/instances/create
 * gcloud: https://cloud.google.com/sdk/gcloud/reference/workbench/instances
+
+## Generate images with Imagen 2 API
+
+Open the [01_generate_images.ipynb](src/01_generate_images.ipynb) notebook and follow the steps detailed within.
+
+## Train Image Classification Model
+
+Open the [02_image_classification_model.ipynb](src/02_image_classification_model.ipynb) notebook and follow the steps detailed within.
