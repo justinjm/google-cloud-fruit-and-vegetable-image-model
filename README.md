@@ -1,4 +1,4 @@
-# Google Cloud Vertex AI Fruit and Vegtable Image Model
+# Google Cloud Vertex AI Fruit and Vegetable Image Model
 
 ## Overview
 
@@ -8,7 +8,7 @@ Specifically, you will:
 
 1. Setup Google Cloud project and create a [Vertex AI Workbench Instance](https://cloud.google.com/vertex-ai/docs/workbench/instances/introduction)
 2. Generate synthentic images of fruit and vegtables that are ripe or rotten using Imagen 2 API (see more [here](https://cloud.google.com/vertex-ai/generative-ai/docs/image/overview)) and save them in a Google Cloud Storage bucket.
-3. Train a custom image classification model using Keras and perform an example inference locally.
+3. Fine tune pre-trained image classification model downloaded from TensorFlow Hub and using Tensorflow then perform an example inference locally.
 
 Finally, see the `src` folder for an example notebook from the Kaggle dataset: [Fruit and Vegetable Disease (Healthy vs Rotten)](https://www.kaggle.com/datasets/muhammad0subhan/fruit-and-vegetable-disease-healthy-vs-rotten)
 
