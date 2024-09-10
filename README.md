@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains example code to train an image classification model using [Google Cloud Vertex AI](https://cloud.google.com/vertex-ai) and [Keras](https://keras.io/). 
+This repository contains example code to perform transfer learning or fine-tune a pre-trained image classification model using [Google Cloud Vertex AI](https://cloud.google.com/vertex-ai), [TensorFlow](https://www.tensorflow.org/) and [TensorFlow Hub](https://www.tensorflow.org/hub).
 
 Specifically, you will:
 
