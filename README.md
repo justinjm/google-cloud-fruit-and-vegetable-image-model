@@ -10,8 +10,8 @@ You can work on any or all of the workflows as long as you follow the "before yo
 
 | **Workflow** | **Description** | **Code** |
 |---|---|---|
-| 1. **Kaggle Example** | Example notebooks from kaggle.com using the Kaggle dataset and working with open source models in a local notebook environment | [01-kaggle-example](01-kaggle-example/) |
-| 2. **Kaggle + Vertex AI** | Example using Kaggle dataset as training data and using Vertex AI for development environment and compute resources for training job | [02-kaggle-vertex-ai](02-kaggle-vertex-ai/) |
+| 1. **Kaggle Example** | Example notebooks from kaggle.com using the Kaggle dataset and working with open source models in a local notebook environment | [01-kaggle-examples](01-kaggle-examples/) |
+| 2. **Kaggle + Vertex AI** | Example using Kaggle dataset as training data and using Vertex AI for development environment and compute resources for training job | [02-kaggle-vertex-ai](02-kaggle-vertex-ai/) |å
 | 3. **Kaggle + Imagen + Vertex AI** | Example workflow generating a synthetic dataset with Imagen API and using Vertex AI for development environment and compute resources for training job | [03-imagen-vertex-ai](03-imagen-vertex-ai/) |
 
 ## Before you begin
