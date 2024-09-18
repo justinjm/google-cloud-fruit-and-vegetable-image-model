@@ -1,6 +1,7 @@
 #.gitignore
 
 ## data
+*/temp/*
 data/*
 generated-images/*
 example_requests.json
